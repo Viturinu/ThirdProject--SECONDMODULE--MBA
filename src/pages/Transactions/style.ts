@@ -10,7 +10,7 @@ export const TransactionsContainer = styled.main`
 export const TransactionsTable = styled.table`
     width: 100%;
     border-collapse: separate; //nos permite colocar o border-spacing, similar ao gap
-    border-spacing: 0 0.5rem; //aqui, difernete dos outros luigares, o primeiro argumento é para o eixo x (deve ser porque a orientação da tabela é column)
+    border-spacing: 0 0.5rem; //aqui, diferente dos outros lugares, o primeiro argumento é para o eixo x (deve ser porque a orientação da tabela é column)
     margin-top: 1.5rem;
 
     td{
