@@ -4,6 +4,7 @@ import { Summary } from "../../components/Summary";
 import { SearchForm } from "./components/SearchForm";
 import { PriceHighLight, TransactionsContainer, TransactionsTable } from "./style";
 import { TransactionsContext } from "../../contexts/TransacationsContext";
+import { dateFormatter, priceFormatter } from "../../utils/formatter";
 
 export function Transactions() {
     const {transactions} = useContext(TransactionsContext); //lá estamos criando o contexto e envolvendo para que consigamos ter acesso, no entanto tempos que usar o useContext para, de fato, acessar as variaveis que depositamos dentor do contexto
@@ -21,10 +22,13 @@ export function Transactions() {
                                 <tr key={transaction.id}>
                                     <td width="50%">{transaction.description}</td>
                                     <td>
-                                        <PriceHighLight variant={transaction.type}>{transaction.price}</PriceHighLight>
+                                        <PriceHighLight variant={transaction.type}>
+                                            {transaction.type === "outcome" && "- "}
+                                            {priceFormatter.format(transaction.price)}
+                                        </PriceHighLight>
                                     </td>
                                     <td>{transaction.category}</td>
-                                    <td>{transaction.createdAt}</td>
+                                    <td>{dateFormatter.format(new Date(transaction.createdAt))}</td>
                                 </tr>
                             )
                         })}

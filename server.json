@@ -1,20 +1,44 @@
 {
-    "transactions": [
-        {
-            "id": 1,
-            "description": "Desenvolvimento de site",
-            "type": "income",
-            "category": "Venda",
-            "price": 14000,
-            "createdAt": "2025-02-24T19:22:38.241Z"
-        },
-        {
-            "id": 2,
-            "description": "Agente de alimentação",
-            "type": "outcome",
-            "category": "Alimentação",
-            "price": 50,
-            "createdAt": "2025-02-26T19:18:20.241Z"
-        }
-    ]
+  "transactions": [
+    {
+      "id": "1",
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 14000,
+      "createdAt": "2025-02-24T19:22:38.241Z"
+    },
+    {
+      "id": "2",
+      "description": "Agente de alimentação",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 50,
+      "createdAt": "2025-02-26T19:18:20.241Z"
+    },
+    {
+      "id": "afaf",
+      "description": "Teste",
+      "price": 6,
+      "category": "Web",
+      "type": "outcome",
+      "createdAt": "2025-02-25T18:42:06.817Z"
+    },
+    {
+      "id": "00fc",
+      "description": "vbvbvcTeste",
+      "price": 600,
+      "category": "TesteWeb",
+      "type": "income",
+      "createdAt": "2025-02-25T18:42:32.021Z"
+    },
+    {
+      "id": "1d9e",
+      "description": "Database",
+      "price": 5000,
+      "category": "Web Development",
+      "type": "income",
+      "createdAt": "2025-02-25T19:46:23.654Z"
+    }
+  ]
 }
